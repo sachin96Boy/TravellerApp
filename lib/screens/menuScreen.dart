@@ -103,7 +103,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
             ),
           ),
           Row(
-            children: [
+            children: const [
               AppLargeText(
                 text: "Explore More",
               )
