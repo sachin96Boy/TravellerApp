@@ -12,18 +12,36 @@ class NavigationScreen extends StatefulWidget {
 }
 
 class _NavigationScreenState extends State<NavigationScreen> {
-  final int _selectedIndex = 0;
+  late int _selectedIndex = 0;
   final List _pages = [
     const MenuScreen(),
     const AddItemScreen(),
     const SearchScreen(),
     const NotificationScreen(),
   ];
+  void onTap(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+        type: BottomNavigationBarType.fixed,
+        currentIndex: _selectedIndex,
+        onTap: onTap,
+        selectedItemColor: Colors.black,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        selectedFontSize: 0.0,
+        unselectedFontSize: 0.0,
+        elevation: 0.0,
+        unselectedItemColor: Colors.grey.withOpacity(0.8),
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
