@@ -46,7 +46,20 @@ class _DetailedScreenState extends State<DetailedScreen> {
                 ],
               ),
             ),
-            
+            Positioned(
+              top: 330.0,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: 500.0,
+                decoration: const BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30.0),
+                    topRight: Radius.circular(30.0),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
