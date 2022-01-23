@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:my_traveller_app/screens/detailedScreen.dart';
 import 'package:my_traveller_app/screens/navpages/navigationScreen.dart';
 import 'package:my_traveller_app/screens/welcomeScreen.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const NavigationScreen(),
+      home: const DetailedScreen(),
     );
   }
 }
