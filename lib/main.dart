@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:my_traveller_app/screens/detailedScreen.dart';
-import 'package:my_traveller_app/screens/navpages/navigationScreen.dart';
-import 'package:my_traveller_app/screens/welcomeScreen.dart';
+import 'package:my_traveller_app/screens/detailed_screen.dart';
+// import 'package:my_traveller_app/screens/navpages/navigation_screen.dart';
+// import 'package:my_traveller_app/screens/welcome_screen.dart';
 
 Future main() async {
   await dotenv.load(fileName: ".env");

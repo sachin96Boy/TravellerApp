@@ -11,7 +11,7 @@ class _DetailedScreenState extends State<DetailedScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.maxFinite,
         height: double.maxFinite,
         child: Stack(
@@ -25,7 +25,8 @@ class _DetailedScreenState extends State<DetailedScreen> {
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(
-                        "https://i.ibb.co/jkM7SL7/wallpaperflare-com-wallpaper.jpg"),
+                        "https://www.joblo.com/wp-content/uploads/2022/03/thirteen-lives-poster-400x600.jpg",
+                        scale: 1.0),
                     fit: BoxFit.cover,
                   ),
                 ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:my_traveller_app/widgets/appLargeText.dart';
-import 'package:my_traveller_app/widgets/appText.dart';
-import 'package:my_traveller_app/widgets/responsiveButton.dart';
+import 'package:my_traveller_app/widgets/app_large_text.dart';
+import 'package:my_traveller_app/widgets/app_text.dart';
+import 'package:my_traveller_app/widgets/responsive_button.dart';
 
 class WelcomwScreen extends StatefulWidget {
   const WelcomwScreen({Key? key}) : super(key: key);

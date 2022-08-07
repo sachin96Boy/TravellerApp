@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_traveller_app/screens/addItemScreen.dart';
-import 'package:my_traveller_app/screens/menuScreen.dart';
-import 'package:my_traveller_app/screens/notificationScreen.dart';
-import 'package:my_traveller_app/screens/searchScreen.dart';
+import 'package:my_traveller_app/screens/additem_screen.dart';
+import 'package:my_traveller_app/screens/menu_screen.dart';
+import 'package:my_traveller_app/screens/notification_screen.dart';
+import 'package:my_traveller_app/screens/search_screen.dart';
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({Key? key}) : super(key: key);

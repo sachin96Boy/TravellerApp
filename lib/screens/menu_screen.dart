@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_traveller_app/widgets/appLargeText.dart';
-import 'package:my_traveller_app/widgets/appText.dart';
+import 'package:my_traveller_app/widgets/app_large_text.dart';
+import 'package:my_traveller_app/widgets/app_text.dart';
 
 class MenuScreen extends StatefulWidget {
   const MenuScreen({Key? key}) : super(key: key);
@@ -53,29 +53,27 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
             child: const AppLargeText(text: "Discover"),
           ),
           const SizedBox(height: 18.0),
-          Container(
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: TabBar(
-                labelPadding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                controller: _tabController,
-                labelColor: Colors.black,
-                unselectedLabelColor: Colors.grey.withOpacity(0.8),
-                isScrollable: true,
-                indicatorSize: TabBarIndicatorSize.label,
-                indicator: CircleTabIndicator(color: Colors.blue, radius: 4.0),
-                tabs: const [
-                  Tab(
-                    text: "Places",
-                  ),
-                  Tab(
-                    text: "Insperations",
-                  ),
-                  Tab(
-                    text: "Emotions",
-                  ),
-                ],
-              ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: TabBar(
+              labelPadding: const EdgeInsets.only(left: 20.0, right: 20.0),
+              controller: _tabController,
+              labelColor: Colors.black,
+              unselectedLabelColor: Colors.grey.withOpacity(0.8),
+              isScrollable: true,
+              indicatorSize: TabBarIndicatorSize.label,
+              indicator: CircleTabIndicator(color: Colors.blue, radius: 4.0),
+              tabs: const [
+                Tab(
+                  text: "Places",
+                ),
+                Tab(
+                  text: "Insperations",
+                ),
+                Tab(
+                  text: "Emotions",
+                ),
+              ],
             ),
           ),
           Container(
@@ -127,7 +125,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
             ),
           ),
           const SizedBox(height: 9),
-          Container(
+          SizedBox(
             height: 100.0,
             width: double.maxFinite,
             child: ListView.builder(
