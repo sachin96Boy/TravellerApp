@@ -24,7 +24,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
+          Container( 
             padding: const EdgeInsets.only(top: 70, left: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -62,7 +62,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
               unselectedLabelColor: Colors.grey.withOpacity(0.8),
               isScrollable: true,
               indicatorSize: TabBarIndicatorSize.label,
-              indicator: CircleTabIndicator(color: Colors.blue, radius: 4.0),
+              indicator: const CircleTabIndicator(color: Colors.blue, radius: 4.0),
               tabs: const [
                 Tab(
                   text: "Places",
@@ -145,7 +145,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
                             ),
                             child: Icon(custicons.values.elementAt(index)),
                           ),
-                          Container(
+                          SizedBox(
                             width: 30.0,
                             height: 20.0,
                             child: AppText(
