@@ -41,10 +41,7 @@ class AppButton extends StatelessWidget {
               icon,
               color: color,
             )
-          : AppText(
-              text: text!,
-              color: Colors.black,
-            ),
+          : AppText(text: text!, color: color),
     );
   }
 }
