@@ -11,3 +11,13 @@ class LoadingState extends AppCubitState {
   @override
   List<Object?> get props => [];
 }
+
+class ErrorState extends AppCubitState {
+  @override
+  List<Object?> get props => [];
+}
+
+class loadedState extends AppCubitState {
+  @override
+  List<Object?> get props => [];
+}
