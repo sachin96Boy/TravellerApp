@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:my_traveller_app/screens/detailed_screen.dart';
+import 'package:my_traveller_app/cubit/app_cubit_logics.dart';
+import 'package:my_traveller_app/cubit/app_cubits.dart';
+// import 'package:my_traveller_app/screens/detailed_screen.dart';
 // import 'package:my_traveller_app/screens/navpages/navigation_screen.dart';
 // import 'package:my_traveller_app/screens/welcome_screen.dart';
 
@@ -29,7 +32,10 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const DetailedScreen(),
+      home: BlocProvider<AppCubits>(
+        create: (context) => AppCubits(),
+        child: const AppCubicLogic(),
+      ),
     );
   }
 }
